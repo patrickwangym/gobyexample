@@ -21,12 +21,37 @@ func sum(nums ...int) {
 	fmt.Println(total)
 }
 
+// A function can only have one variadic parameter,
+// and it must be the last parameter in the function signature.
+// the function below is wrong
+//
+//	func multiple(a ...int, b ...int) {
+//		for _, num := range b {
+//			a *= num
+//		}
+//		fmt.Println(a)
+//	}
+//
+// this is correct
+func multiple(a int, b ...int) {
+	for _, num := range b {
+		a *= num
+	}
+	fmt.Println(a)
+}
+
 func main() {
 
 	// Variadic functions can be called in the usual way
 	// with individual arguments.
 	sum(1, 2)
 	sum(1, 2, 3)
+
+	multiple(2, 3, 4)
+	multiple(2)
+
+	b := []int{1, 2, 3}
+	multiple(2, b...) // 2*1*2*3
 
 	// If you already have multiple args in a slice,
 	// apply them to a variadic function using
