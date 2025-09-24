@@ -32,7 +32,7 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
 - [x] 13. [Variadic Functions](./examples/variadic-functions/variadic-functions.go)
 - [x] 14. [Closures](./examples/closures/closures.go)
       Usage:
-      [closures in aac-backend](../go-closures-in-aac-backend.md)
+      [closures in aac-backend](/closures-in-aac-backend.md)
       Some usage can only be fully grasped when later topics are covered. Will need to revisit this later.
 - [x] 15. [Recursion](./examples/recursion/recursion.go)
 
@@ -42,7 +42,11 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
 
 ## Advanced Concepts (Week 1: Day 4-5)
 
-- [ ] 17. [Pointers](./examples/pointers/pointers.go)
+- [x] 17. [Pointers](./examples/pointers/pointers.go)
+      Usage:
+      [pointers in aac-backend](/pointer-usage-in-aac-backend.md)
+      [pointer usage analysis](/pointer-usage-analysis.md)
+      [pointer patterns analysis](/pointer-patterns-analysis.md)
 - [x] 18. [Strings and Runes](./examples/strings-and-runes/strings-and-runes.go)
 - [ ] 19. [Structs](./examples/structs/structs.go)
 - [ ] 20. [Methods](./examples/methods/methods.go)
