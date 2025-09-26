@@ -30,6 +30,8 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
 - [x] 11. [Functions](./examples/functions/functions.go)
 - [x] 12. [Multiple Return Values](./examples/multiple-return-values/multiple-return-values.go)
 - [x] 13. [Variadic Functions](./examples/variadic-functions/variadic-functions.go)
+      Usage:
+      [variadic functions and sorter design patterns in aac-backend](/variadic-functions-and-sorter-design-patterns.md)
 - [x] 14. [Closures](./examples/closures/closures.go)
       Usage:
       [closures in aac-backend](/closures-in-aac-backend.md)
@@ -48,9 +50,13 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
       [pointer usage analysis](/pointer-usage-analysis.md)
       [pointer patterns analysis](/pointer-patterns-analysis.md)
 - [x] 18. [Strings and Runes](./examples/strings-and-runes/strings-and-runes.go)
-- [ ] 19. [Structs](./examples/structs/structs.go)
-- [ ] 20. [Methods](./examples/methods/methods.go)
-- [ ] 21. [Interfaces](./examples/interfaces/interfaces.go)
+- [x] 19. [Structs](./examples/structs/structs.go)
+      Usage:
+      [structs in aac-backend](/struct-usage-in-aac-backend.md)
+- [x] 20. [Methods](./examples/methods/methods.go)
+- [x] 21. [Interfaces](./examples/interfaces/interfaces.go)
+      Usage:
+      [interfaces and dependency injection in aac-backend](/interfaces-and-dependency-injection-in-aac-backend.md)
 
 ## Modern Go Features
 

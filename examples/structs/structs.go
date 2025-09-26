@@ -23,6 +23,14 @@ func newPerson(name string) *person {
 	return &p
 }
 
+func modifyStructByValue(p person) {
+	p.age = 30
+}
+
+func modifyStructByPointer(p *person) {
+	p.age = 40
+}
+
 func main() {
 
 	// This syntax creates a new struct.
@@ -52,6 +60,12 @@ func main() {
 	// Structs are mutable.
 	sp.age = 51
 	fmt.Println(sp.age)
+
+	modifyStructByValue(s)
+	fmt.Println("ModifyByValue", s.age) // still 51
+
+	modifyStructByPointer(&s)
+	fmt.Println("ModifyByPointer", s.age) // now 40
 
 	// If a struct type is only used for a single value, we don't
 	// have to give it a name. The value can have an anonymous
