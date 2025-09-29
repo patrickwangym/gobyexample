@@ -23,7 +23,7 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
 - [x] 9. [Slices](./examples/slices/slices.go)
 - [x] 10. [Maps](./examples/maps/maps.go)
       Usage:
-      [maps in aac-backend](../maps-usage-in-aac-backend.md)
+      [maps in aac-backend](/maps-usage-in-aac-backend.md)
 
 ## Functions (Week 1: Day 3-4)
 
@@ -45,10 +45,9 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
 ## Advanced Concepts (Week 1: Day 4-5)
 
 - [x] 17. [Pointers](./examples/pointers/pointers.go)
-      Usage:
-      [pointers in aac-backend](/pointer-usage-in-aac-backend.md)
-      [pointer usage analysis](/pointer-usage-analysis.md)
-      [pointer patterns analysis](/pointer-patterns-analysis.md)
+  - [pointers in aac-backend](/pointer-usage-in-aac-backend.md)
+  - [pointer usage analysis](/pointer-usage-analysis.md)
+  - [pointer patterns analysis](/pointer-patterns-analysis.md)
 - [x] 18. [Strings and Runes](./examples/strings-and-runes/strings-and-runes.go)
 - [x] 19. [Structs](./examples/structs/structs.go)
       Usage:
@@ -60,8 +59,12 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
 
 ## Modern Go Features
 
-- [ ] 22. [Enums](./examples/enums/enums.go)
-- [ ] 23. [Struct Embedding](./examples/struct-embedding/struct-embedding.go)
+- [x] 22. [Enums](./examples/enums/enums.go)
+      usage:
+      [enum in aac backend](/enums-in-aac-backend.md)
+- [x] 23. [Struct Embedding](./examples/struct-embedding/struct-embedding.go)
+  - [struct embedding analysis](/struct-embedding-analysis.md)
+  - [nullable types analysis](/nullable-types-analysis.md)
 - [ ] 24. [Generics](./examples/generics/generics.go)
 - [ ] 25. [Range over Iterators](./examples/range-over-iterators/range-over-iterators.go)
 
