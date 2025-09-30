@@ -63,7 +63,7 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
       usage:
       [enum in aac backend](/enums-in-aac-backend.md)
 - [x] 23. [Struct Embedding](./examples/struct-embedding/struct-embedding.go)
-  - [struct embedding analysis](/struct-embedding-analysis.md)
+  - [struct embedding analysis](/struct-embedding-analysis.md) (callback is a bit hard, revisit later)
   - [nullable types analysis](/nullable-types-analysis.md)
 - [ ] 24. [Generics](./examples/generics/generics.go)
 - [ ] 25. [Range over Iterators](./examples/range-over-iterators/range-over-iterators.go)
