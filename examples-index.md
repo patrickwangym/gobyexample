@@ -67,14 +67,15 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
   - [nullable types analysis](/nullable-types-analysis.md)
 - [x] 24. [Generics](./examples/generics/generics.go)
   - [generics with reflection](/generics-with-reflection.md)
-- [ ] 25. [Range over Iterators](./examples/range-over-iterators/range-over-iterators.go)
+- [x] 25. [Range over Iterators](./examples/range-over-iterators/range-over-iterators.go)
   - [range over iterators analysis](/range-over-iterators-analysis.md) Some code could be refactored to use iterators, revisit later. Need to take note the server must be running Go 1.23+.
   - [range over iterators refactoring opportunity](/range-over-iterators-refactoring-opportunity.md) A detailed analysis of potential refactoring opportunities in the AAC backend using iterators.
 
 ## Error Handling (Week 1: Day 5)
 
-- [ ] 26. [Errors](./examples/errors/errors.go)
-- [ ] 27. [Custom Errors](./examples/custom-errors/custom-errors.go)
+- [x] 26. [Errors](./examples/errors/errors.go)
+- [x] 27. [Custom Errors](./examples/custom-errors/custom-errors.go)
+  - [custom error patterns analysis](/custom-error-patterns-analysis.md)
 
 ## Concurrency (Week 2+)
 

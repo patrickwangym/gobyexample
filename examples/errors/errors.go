@@ -36,6 +36,7 @@ func f(arg int) (int, error) {
 // signify a specific error condition.
 var ErrOutOfTea = fmt.Errorf("no more tea available")
 var ErrPower = fmt.Errorf("can't boil water")
+var ErrPowerInTeaMaking = fmt.Errorf("making tea: %w", ErrPower)
 
 func makeTea(arg int) error {
 	if arg == 2 {
@@ -48,7 +49,9 @@ func makeTea(arg int) error {
 		// create a logical chain (A wraps B, which wraps C, etc.)
 		// that can be queried with functions like `errors.Is`
 		// and `errors.As`.
-		return fmt.Errorf("making tea: %w", ErrPower)
+		// return fmt.Errorf("making tea: %w", ErrPower)
+		return ErrPowerInTeaMaking
+
 	}
 	return nil
 }
@@ -74,8 +77,12 @@ func main() {
 			// errors in a chain of errors.
 			if errors.Is(err, ErrOutOfTea) {
 				fmt.Println("We should buy new tea!")
-			} else if errors.Is(err, ErrPower) {
+			} else if errors.Is(err, ErrPower) { // check for specific error
 				fmt.Println("Now it is dark.")
+				if errors.Is(err, ErrPowerInTeaMaking) { // check for specific error in chain
+					fmt.Println("We couldn't make tea since we had no power.")
+				}
+				fmt.Println(err) // print the full error chain
 			} else {
 				fmt.Printf("unknown error: %s\n", err)
 			}
