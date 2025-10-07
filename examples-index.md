@@ -79,9 +79,9 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
 
 ## Concurrency (Week 2+)
 
-- [ ] 28. [Goroutines](./examples/goroutines/goroutines.go)
-- [ ] 29. [Channels](./examples/channels/channels.go)
-- [ ] 30. [Channel Buffering](./examples/channel-buffering/channel-buffering.go)
+- [x] 28. [Goroutines](./examples/goroutines/goroutines.go)
+- [x] 29. [Channels](./examples/channels/channels.go)
+- [x] 30. [Channel Buffering](./examples/channel-buffering/channel-buffering.go)
 - [ ] 31. [Channel Synchronization](./examples/channel-synchronization/channel-synchronization.go)
 - [ ] 32. [Channel Directions](./examples/channel-directions/channel-directions.go)
 - [ ] 33. [Select](./examples/select/select.go)

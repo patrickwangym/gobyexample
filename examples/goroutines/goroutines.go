@@ -28,6 +28,7 @@ func main() {
 	// You can also start a goroutine for an anonymous
 	// function call.
 	go func(msg string) {
+		time.Sleep(time.Second * 2)
 		fmt.Println(msg)
 	}("going")
 

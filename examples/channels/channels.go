@@ -5,7 +5,10 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 
@@ -13,10 +16,15 @@ func main() {
 	// Channels are typed by the values they convey.
 	messages := make(chan string)
 
+	fmt.Println("Sending message...")
+
 	// _Send_ a value into a channel using the `channel <-`
 	// syntax. Here we send `"ping"`  to the `messages`
 	// channel we made above, from a new goroutine.
-	go func() { messages <- "ping" }()
+	go func() {
+		time.Sleep(time.Second * 2)
+		messages <- "ping"
+	}()
 
 	// The `<-channel` syntax _receives_ a value from the
 	// channel. Here we'll receive the `"ping"` message
