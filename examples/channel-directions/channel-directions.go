@@ -14,11 +14,16 @@ func ping(pings chan<- string, msg string) {
 	pings <- msg
 }
 
+// Think of the channel as a box [chan] and the arrow shows data movement:
+// <-[chan] = data exits the box (you receive it)
+// Arrow points OUT OF the channel → Data flows from channel to you → Receive only
+// [chan]<- = data enters the box (you send it)
+// Arrow points INTO the channel → Data flows from you into channel → Send only
 // The `pong` function accepts one channel for receives
 // (`pings`) and a second for sends (`pongs`).
 func pong(pings <-chan string, pongs chan<- string) {
-	msg := <-pings
-	pongs <- msg
+	msg := <-pings // <-pings (receive) matches <-chan (receive-only)
+	pongs <- msg   // pongs<- (send) matches chan<- (send-only)
 }
 
 func main() {
