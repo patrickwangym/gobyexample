@@ -4,7 +4,10 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // In this example we'll use a `jobs` channel to
 // communicate work to be done from the `main()` goroutine
@@ -26,6 +29,7 @@ func main() {
 			j, more := <-jobs
 			if more {
 				fmt.Println("received job", j)
+				time.Sleep(time.Second)
 			} else {
 				fmt.Println("received all jobs")
 				done <- true
@@ -57,4 +61,11 @@ func main() {
 	// and empty.
 	_, ok := <-jobs
 	fmt.Println("received more jobs:", ok)
+
+	// Key points:
+	// - You can receive from a closed channel
+	// - You'll get buffered values first (if any remain)
+	// - Once empty, receives return zero value + false for the ok flag
+	// - You cannot send to a closed channel (this causes a panic)
+	// This makes closing channels useful for signaling "no more data will be sent" to receivers!
 }

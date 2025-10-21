@@ -86,13 +86,14 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
   - [channel synchronization notes](./examples/channel-synchronization/channel-synchronization-notes.md)
   - [channel synchronization guide](/channel-synchronization-guide.md)
 - [x] 32. [Channel Directions](./examples/channel-directions/channel-directions.go)
-- [ ] 33. [Select](./examples/select/select.go)
+- [x] 33. [Select](./examples/select/select.go)
   - [select concept analysis](/select-concept-analysis.md)
-- [ ] 34. [Timeouts](./examples/timeouts/timeouts.go)
+- [x] 34. [Timeouts](./examples/timeouts/timeouts.go)
   - [timeouts analysis](/timeouts-analysis.md)
-- [ ] 35. [Non-Blocking Channel Operations](./examples/non-blocking-channel-operations/non-blocking-channel-operations.go)
-- [ ] 36. [Closing Channels](./examples/closing-channels/closing-channels.go)
-- [ ] 37. [Range over Channels](./examples/range-over-channels/range-over-channels.go)
+- [x] 35. [Non-Blocking Channel Operations](./examples/non-blocking-channel-operations/non-blocking-channel-operations.go)
+  - [non-blocking channels analysis](/non-blocking-channels-analysis.md)
+- [x] 36. [Closing Channels](./examples/closing-channels/closing-channels.go)
+- [x] 37. [Range over Channels](./examples/range-over-channels/range-over-channels.go)
 
 ## Advanced Concurrency
 

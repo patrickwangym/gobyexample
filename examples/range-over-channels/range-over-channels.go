@@ -22,4 +22,17 @@ func main() {
 	for elem := range queue {
 		fmt.Println(elem)
 	}
+
+	// We can also use the same approach as in the previous
+	// example, using the 2-value assignment form to
+	// detect when a channel is closed.
+	for {
+		elem, more := <-queue
+		if more {
+			fmt.Println(elem)
+		} else {
+			break
+		}
+
+	}
 }
