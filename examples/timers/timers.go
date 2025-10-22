@@ -34,9 +34,12 @@ func main() {
 		<-timer2.C
 		fmt.Println("Timer 2 fired")
 	}()
+	time.Sleep(2 * time.Second)
 	stop2 := timer2.Stop()
 	if stop2 {
-		fmt.Println("Timer 2 stopped")
+		fmt.Println("Stopped Timer 2 successfully")
+	} else {
+		fmt.Println("Timer 2 already fired or stopped")
 	}
 
 	// Give the `timer2` enough time to fire, if it ever

@@ -97,8 +97,8 @@ Click on any topic to jump directly to the Go code example. Perfect for the Week
 
 ## Advanced Concurrency
 
-- [ ] 38. [Timers](./examples/timers/timers.go)
-- [ ] 39. [Tickers](./examples/tickers/tickers.go)
+- [x] 38. [Timers](./examples/timers/timers.go)
+- [x] 39. [Tickers](./examples/tickers/tickers.go)
 - [ ] 40. [Worker Pools](./examples/worker-pools/worker-pools.go)
 - [ ] 41. [WaitGroups](./examples/waitgroups/waitgroups.go)
 - [ ] 42. [Rate Limiting](./examples/rate-limiting/rate-limiting.go)

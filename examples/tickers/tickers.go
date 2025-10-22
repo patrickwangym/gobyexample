@@ -24,6 +24,7 @@ func main() {
 		for {
 			select {
 			case <-done:
+				fmt.Println("Stopped Ticker successfully")
 				return
 			case t := <-ticker.C:
 				fmt.Println("Tick at", t)
@@ -35,7 +36,10 @@ func main() {
 	// is stopped it won't receive any more values on its
 	// channel. We'll stop ours after 1600ms.
 	time.Sleep(1600 * time.Millisecond)
+	// Stop() does NOT close the channel - it just stops sending values to it.
+	// If you did a bare <-ticker.C without any other exit mechanism after stopping, it would block forever.
 	ticker.Stop()
 	done <- true
 	fmt.Println("Ticker stopped")
+	time.Sleep(500 * time.Millisecond) // Wait to ensure goroutine finishes
 }
